@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>Recipe Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+	  <h1>Recipe App</h1>
+    </nav>
+    <div class="container">
+       <div class="left-column">
+         <h3>Add New Recipe</h3>
+          <form>
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" required>
+            <br>
+
+            <label for="recipe-ingredients">Ingredients:</label>
+            <textarea id="recipe-ingredients" rows="5" required></textarea>
+            <br>
+
+            <label for="recipe-method">Method:</label>
+            <textarea id="recipe-method" rows="5" required></textarea>
+            <br>
+
+            <button type="submit">Add Recipe</button>
+          </form>
+         </div>
+	  <div class="right-column">
+		<div id="search-section">
+            <h3 class="heading3">My Recipe List</h3>
+            <label for="search-box">Search Recipes:</label>
+            <input type="text" id="search-box">
+        </div>
+            <div id="my-recipes"></div>
+		    <div id="no-recipes">You have no recipes.</div>
+      </div>
+    </div>
+    <script src="recipe.js"></script>
+  </body>
+</html>
